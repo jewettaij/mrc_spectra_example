@@ -1,6 +1,18 @@
 #!/usr/bin/env python
 
+# Note: This is an executable python file.
+# You can run this python file from the shell.
+
 # Prerequisites:
+# The python commands in this file assume there are two images present in
+# this directory: "orig_crop_98_225_133_260_178_305.mrc", and
+# "orig_labels_float_98_225_133_260_178_305.mrc".
+# If they are not present, the next few lines of comments may be useful.
+# Here is the list of steps that I used in order to prepare these two mrc files.
+# The two files are cropped, mapped versions of other files provided by the
+# PBC consortium.  To prepare your own files in a similar way,
+# follow this procedure:
+# 
 # 1) Download and compile visfd
 #    git clone https://github.com/jewettaij/visfd ~/visfd
 #    cd ~/visfd
@@ -221,7 +233,7 @@ plt.step(frequencies, img_labels_spectrum, where='mid',label='segmented')
 # entries in the spectrum (probably at low frequencies).
 # So instead of showing the whole spectrum, scale the Y axis so that you can
 # see a certain fraction of them ("median_fraction", for example 85% of them).
-img_spectrum_sorted = img_spectrum
+img_spectrum_sorted = [f for f in img_spectrum]
 img_spectrum_sorted.sort()
 median_fraction = 0.85
 median_fraction_i = int(floor(median_fraction*len(img_spectrum_sorted)))
