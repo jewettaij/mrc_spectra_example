@@ -1,3 +1,5 @@
+[![License](https://img.shields.io/badge/license-Unlicense-green.svg)]
+
 mrc_spectra_example
 ===========
 
@@ -21,4 +23,5 @@ as jupyter (if you plan to open the .ipynb file).
 
 ## License
 
-The code in this short example is in the public domain.
+The code in this short example is in the
+[public domain](UNLICENSE).
