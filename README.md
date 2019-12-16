@@ -1,4 +1,4 @@
-[![License](https://img.shields.io/badge/license-Unlicense-green.svg)]
+[![License](https://img.shields.io/badge/license-Unlicense-green.svg)](./UNLICENSE)
 
 mrc_spectra_example
 ===========
